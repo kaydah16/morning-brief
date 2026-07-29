@@ -41,14 +41,30 @@ body {
 
   <div class="card">
 
-    <div class="brief">
-      Loading Morning Brief...
-    </div>
+<div class="brief" id="brief">
+  Loading Morning Brief...
+</div>
 
   </div>
 
 </div>
 
+<script>
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbz0eA-bU8UirPb-UCAcjFDBWn7M60R_m0u2gjA0v2fI5swHC9kFvnRiNIPCSRIYoV3S/exec";
+
+fetch(scriptURL)
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("brief").textContent = data;
+  })
+  .catch(error => {
+    document.getElementById("brief").textContent =
+      "Unable to load Morning Brief.";
+  });
+
+</script>
+  
 </body>
 
 </html>
