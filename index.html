@@ -80,24 +80,9 @@ function loadBrief(data) {
   document.getElementById("brief").textContent = data;
 }
 
-const script = document.createElement("script");
-
-script.src =
-  "https://script.google.com/macros/s/AKfycbz0eA-bU8UirPb-UCAcjFDBWn7M60R_m0u2gjA0v2fI5swHC9kFvnRiNIPCSRIYoV3S/exec?callback=loadBrief";
-
-script.onload = function() {
-  console.log("Morning Brief script loaded");
-};
-
-script.onerror = function() {
-  document.getElementById("brief").textContent =
-    "Script failed to load.";
-  console.log("Script failed");
-};
-
-document.head.appendChild(script);
-
 </script>
+
+<script src="https://script.google.com/macros/s/AKfycbz0eA-bU8UirPb-UCAcjFDBWn7M60R_m0u2gjA0v2fI5swHC9kFvnRiNIPCSRIYoV3S/exec?callback=loadBrief"></script>
   
 </body>
 
