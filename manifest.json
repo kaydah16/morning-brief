@@ -1,0 +1,9 @@
+{
+  "name": "Morning Brief",
+  "short_name": "Morning Brief",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F4F0",
+  "theme_color": "#E6C6D6",
+  "icons": []
+}
