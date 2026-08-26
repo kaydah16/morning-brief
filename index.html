@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="./manifest.json">
 
 <style>
   html, body {
@@ -39,7 +39,7 @@ if ("serviceWorker" in navigator) {
 
   window.addEventListener("load", function() {
 
-    navigator.serviceWorker.register("/sw.js");
+    navigator.serviceWorker.register("./sw.js");
 
   });
 
